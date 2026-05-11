@@ -10,6 +10,23 @@ A aplicação é construída utilizando FastAPI, garantindo alta performance e u
 
 ## Estrutura do Projeto
 
+```
+techshop/
+├── docs/
+│   ├── BACKLOG.md
+│   ├── DIAGRAMAS.md
+│   ├── DIRETRIZES_IA.md
+│   └── PRD.md
+├── src/
+│   ├── cart.py
+│   ├── main.py
+│   └── models.py
+├── .gitignore
+├── pyproject.toml
+├── README.md
+└── uv.lock
+```
+
 -   `src/`: Contém todo o código-fonte da aplicação.
     -   `main.py`: Ponto de entrada da API FastAPI.
     -   `models.py`: Definições dos modelos de dados (Product, CartItem) com Pydantic.
