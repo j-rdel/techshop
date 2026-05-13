@@ -1,4 +1,5 @@
 from typing import List
+from src.discount import apply_discount
 from src.models import CartItem, Product
 
 class ShoppingCart:
@@ -54,9 +55,4 @@ class ShoppingCart:
         Returns:
             float: O valor total com o desconto aplicado.
         """
-        total = self.calculate_total()
-        if total > 1000:
-            return total * 0.80  # 20% de desconto
-        if total > 500:
-            return total * 0.90  # 10% de desconto
-        return total
+        return apply_discount(self.calculate_total())
